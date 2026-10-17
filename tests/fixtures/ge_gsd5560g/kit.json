@@ -1,0 +1,48 @@
+{
+  "created": "2026-10-17",
+  "appliance": {"brand": "GE", "type": "Dishwasher", "model": "GSD5560G00SS", "serial": "DF123456A",
+                "name": "Triton GSD5560G00SS"},
+  "summary": "A GE Triton built-in dishwasher, made in February 2003. It is not part of the 2005 GE dishwasher recall. It has no pull-out filter: you keep it clean by clearing three spots in the tub floor, shown below.",
+  "label": {
+    "location": "inside the door frame, left side",
+    "photos": ["label/photo-1.jpg", "label/photo-2.jpg"],
+    "fields": [
+      {"field": "Maker", "value": "General Electric Company, Appliance Park, Louisville KY 40225", "confidence": "high"},
+      {"field": "Model", "value": "GSD5560G00SS", "confidence": "high"},
+      {"field": "Serial", "value": "DF123456A", "confidence": "high"},
+      {"field": "Electrical", "value": "120 V, 60 Hz. Motor 1.8 A, other 6.4 A, total 8.2 A", "confidence": "high"},
+      {"field": "Listing", "value": "UL Listed 490L, thermally protected", "confidence": "high"}
+    ],
+    "uncertain": []
+  },
+  "age": {"decoded": true, "month": 2, "year": 2003, "confidence": "high",
+          "summary": "Built February 2003, so about 23 years old. GE serials start with a month letter (D = February) and a year letter (F = 2003 for a model of this era).",
+          "source": ["https://servicemag.org/guides/read-appliance-model-serial-number"]},
+  "recall": {"verdict": "not covered", "url": "https://www.cpsc.gov/Recalls/2005/CPSC-GE-Announce-Recall-of-Built-In-Dishwashers-",
+             "summary": "Not covered by CPSC recall 05-116 (2005, fire hazard). That recall covers GSD5560G units whose serial has G as its second letter, or starts with VF. Yours starts with DF."},
+  "manual": {"title": "GE Dishwashers Owner's Manual (GSD5500 series)", "publication": "GE pub. 49-5943-1, Nov 2002",
+             "pdf": "manual/GE GSD5500 series owners manual 49-5943-1.pdf", "markdown": "manual/manual.md",
+             "url": "https://images.salsify.com/image/upload/s--bkgzZt3A--/dc2e0a95f35d05e3208d868b0193970dbe213984.pdf"},
+  "care": [{
+    "title": "Cleaning the filter",
+    "guide": "diagrams/filter-cleaning-guide.png",
+    "intro": "There's no filter you pull out and rinse. A fine mesh screen covers the tub floor (part 502), a coarse dome sits under the lower spray arm (part 504), and a chopper blade in the pump grinds food small enough to drain.",
+    "steps": [
+      {"text": "Wait 20 minutes after a cycle; the heating element can burn you. Pull the lower rack all the way out.", "source": "Manual p. 14 (warning)"},
+      {"text": "Pick out anything on the mesh screen or around the dome: glass, seeds, labels, bones.", "source": "PartSelect parts diagram, parts 502 and 504", "source_url": "https://www.partselect.com/Models/GSD5560G00SS/"},
+      {"text": "Wipe the mesh screen with a damp sponge. A soft brush is fine. Never use scouring pads or harsh cleaners.", "source": "Manual p. 11"},
+      {"text": "Spin the lower spray arm by hand; it should turn freely. Clear clogged holes with a toothpick.", "source": "PartSelect parts diagram, part 501 (general care; this manual has no spray-arm section)", "source_url": "https://www.partselect.com/Models/GSD5560G00SS/"},
+      {"text": "For film or smell: run the longest cycle empty with no detergent. About 18 to 22 minutes in, open the door and pour 2 cups of white vinegar into the bottom.", "source": "Manual p. 14"}
+    ],
+    "when_to_call": "it still won't drain after you've cleaned the air gap (the chrome cap by the faucet, manual p. 11) and run the garbage disposal."
+  }],
+  "facts": [
+    {"text": "The dome and mesh screen are listed as no longer available, so don't force or crack them.", "source": "https://www.partselect.com/Models/GSD5560G00SS/"}
+  ],
+  "links": [
+    {"label": "GE owner support for GSD5560GSS", "url": "https://products.geappliances.com/appliance/gea-specs/GSD5560GSS/support"},
+    {"label": "PartSelect: parts and diagrams", "url": "https://www.partselect.com/Models/GSD5560G00SS/"},
+    {"label": "GE service: 1-800-626-2005", "url": ""}
+  ],
+  "missing": []
+}

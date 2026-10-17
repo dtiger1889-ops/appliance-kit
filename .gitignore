@@ -1,0 +1,24 @@
+# Python and tool caches
+__pycache__/
+*.pyc
+.pytest_cache/
+dist/
+build/
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Kits are personal: label photos carry serial numbers, and manuals and diagrams
+# belong to their makers. They are fetched at run time, never committed.
+Appliances/
+tests/output/
+*.pdf
+*.png
+*.gif
+*.jpg
+*.jpeg
+*.zip
+!assets/*.png

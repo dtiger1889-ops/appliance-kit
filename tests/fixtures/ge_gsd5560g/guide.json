@@ -1,0 +1,25 @@
+{
+  "source": "partselect-00113478i03.gif",
+  "coord_width": 750,
+  "crop": [278, 95, 545, 405],
+  "width": 900,
+  "title": "Cleaning the dishwasher filter",
+  "subtitle": "GE GSD5560G00SS - there's no pull-out filter; clean these 3 spots",
+  "shapes": [
+    {"kind": "polygon", "points": [[285, 330], [395, 298], [500, 340], [395, 398]], "color": "#1f77b4"},
+    {"kind": "badge", "at": [470, 385], "label": "3", "color": "#1f77b4"},
+    {"kind": "ring", "center": [385, 275], "radius": [50, 26], "color": "#d62728"},
+    {"kind": "badge", "at": [318, 262], "label": "2", "color": "#d62728"},
+    {"kind": "ring", "center": [385, 180], "radius": [95, 75], "color": "#2ca02c"},
+    {"kind": "badge", "at": [300, 130], "label": "4", "color": "#2ca02c"},
+    {"kind": "badge", "at": [445, 228], "label": "!", "color": "#ff7f0e"}
+  ],
+  "steps": [
+    {"label": "1", "color": "#555555", "text": "Wait 20 minutes after a cycle (the heater is hot). Pull the lower rack all the way out.", "source": "Manual p. 14 warning"},
+    {"label": "2", "color": "#d62728", "text": "DOME (part 504): pick out debris around it - glass, seeds, labels, bones.", "source": "PartSelect diagram, part 504"},
+    {"label": "3", "color": "#1f77b4", "text": "MESH SCREEN (part 502): wipe with a damp sponge. Soft brush is fine. No scouring pads or harsh cleaners.", "source": "Manual p. 11"},
+    {"label": "4", "color": "#2ca02c", "text": "SPRAY ARM (part 501): spin it by hand; it should turn freely. Clear clogged holes with a toothpick.", "source": "PartSelect diagram, part 501 (general care; not in this manual)"},
+    {"label": "5", "color": "#555555", "text": "Film or smell: run the longest cycle empty, no detergent; at 18-22 minutes pour 2 cups of white vinegar into the bottom.", "source": "Manual p. 14"},
+    {"label": "!", "color": "#ff7f0e", "text": "Only if it rattles or won't drain: the dome is held by screws at the spray-arm hub. Power off first. The dome and screen are discontinued, so don't force them.", "source": "Manual p. 11 (sump cover screws); PartSelect availability"}
+  ]
+}
