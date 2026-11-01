@@ -11,11 +11,13 @@ Everything lands in one folder you can keep.
 
 ![A kit's printable page: the label facts, the build date, the recall check and a marked-up care guide](assets/briefing-page.png)
 
+This repo supplies an agent skill with Python helpers, rather than a standalone appliance app. Install the supplied skill using one of the routes below. A successful run produces a kit folder or download; missing facts and files are listed explicitly. Image reading, web research and script execution must be available in the agent you choose.
+
 ## Set it up
 
 ### If you use Claude (claude.ai or the Claude app)
 
-Works on every plan, including Free.
+Use the skill-upload route if Skills and code execution are available for your account. Workspace policy and product availability can affect access; the instructions below are not a guarantee for every plan.
 
 1. Download **appliance-kit.zip** from the [latest release](../../releases/latest). Don't unzip it.
 2. Open Claude in a web browser at [claude.ai](https://claude.ai) and sign in.
@@ -31,27 +33,17 @@ On a Team or Enterprise plan, an owner has to allow skills first (Organization s
 
 ### If you use ChatGPT
 
-**Skills only work on ChatGPT Business, Enterprise, Healthcare and Edu.** If you're on Free, Plus or Pro, you can't install this skill in ChatGPT; skip to "Without the skill" below.
+This repo supplies a standalone skill folder and a ZIP, not a ChatGPT plugin. OpenAI documents different loading routes for standalone skills and plugins; use the [current skill instructions](https://learn.chatgpt.com/docs/build-skills) for your ChatGPT or Codex surface and check workspace policy. The local Codex folder route is below.
 
-On a Business, Enterprise, Healthcare or Edu account:
+The full workflow needs image reading, web research, Python execution and file creation. Once the skill is loaded with those tools available, send the label photo and ask it to make an appliance kit. A product's ability to read `SKILL.md` does not by itself verify the full workflow. If you cannot load the skill, use the request below for a narrower result.
 
-1. Download **appliance-kit.zip** from the [latest release](../../releases/latest).
-2. In ChatGPT, open the sidebar and choose **Plugins**, then the **Skills** tab.
-3. Choose **Create**, then **Upload from your computer**, and pick the ZIP.
-4. ChatGPT checks the skill before you can use it. Usually it's ready right away. If it says **Needs Review**, read what it shows and confirm. If it says **Blocked**, your workspace doesn't allow it; ask your admin.
-5. Start a new chat. Take a photo of the sticker and send it with a message like:
+### Without the skill
 
-   > Here's the label on my dishwasher. Make me an appliance kit.
-
-Your workspace admin may need to turn on skills (and skill uploading) for you first.
-
-### Without the skill (ChatGPT Free or Plus, or any chatbot)
-
-You can still get most of it. Send the photo with this message:
+With image reading and web research available, send the photo with this message:
 
 > Read the model and serial number from this appliance label and repeat them back to me. Tell me how old it is from the serial number, check cpsc.gov for any recall of this model, find the official owner's manual PDF and give me the link, and write me a short, plain guide to the routine cleaning the manual recommends, with the manual page for each step.
 
-You won't get the folder, the converted manual or the marked-up picture this way.
+That request asks for facts, links and care guidance; it does not install or run the kit-building scripts.
 
 ## If you use Claude Code or Codex
 
@@ -88,6 +80,10 @@ If something can't be found (a blurry photo, a brand whose dates aren't decoded,
 - Recalls come from the US Consumer Product Safety Commission only.
 - Care means owner care: cleaning filters, screens, gaskets and vents. It never tells you to open panels or touch wiring, gas or water lines; for those it says to call for service.
 - No manuals or diagrams are included in this repository. The skill fetches them from the maker and parts sites when you run it.
+
+## Help
+
+For setup questions or missing kit output, [open an issue](https://github.com/dtiger1889-ops/appliance-kit/issues) with the agent/runtime and a redacted error description. Keep appliance serial numbers and label photos private unless you choose to share them.
 
 ## For developers
 
